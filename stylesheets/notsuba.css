@@ -75,8 +75,8 @@ color: #608673;
 div.pages {
 color: #8899AA;
 background: #e9d1be;
-border-right: 1px solid #8FCCCD;
-border-bottom: 1px solid #8FCCCD;
+/*border-right: 1px solid #8FCCCD;*/
+/*border-bottom: 1px solid #8FCCCD;*/
 }
 
 hr {
@@ -85,4 +85,14 @@ border-color: #B0C2B9;
 
 div.boardlist {
 color: #608673;
+}
+.bar {
+  background-color: #E9D1BE;
+}
+
+input[type="submit"] {
+	background: #E9D1BE;
+}
+input[type="submit"]:hover {
+	background: #F1E3D8;
 }

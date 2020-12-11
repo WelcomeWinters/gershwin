@@ -927,7 +927,7 @@
 	// Custom stylesheets available for the user to choose. See the "stylesheets/" folder for a list of
 	// available stylesheets (or create your own).
 	$config['stylesheets']['Yotsuba B'] = ''; // Default; there is no additional/custom stylesheet for this.
-	$config['stylesheets']['Yotsuba'] = 'yotsuba.css';
+	// $config['stylesheets']['Yotsuba'] = 'yotsuba.css';
 	// $config['stylesheets']['Futaba'] = 'futaba.css';
 	// $config['stylesheets']['Dark'] = 'dark.css';
 
@@ -1049,6 +1049,8 @@
  *  Video embedding
  * ====================
  */
+        // Note that in this case, embedding is specific to the optional "embed" post field.
+        // This is not the same as embeding media in the body of a post
 
 	// Enable embedding (see below).
 	$config['enable_embedding'] = false;

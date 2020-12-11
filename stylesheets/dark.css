@@ -13,14 +13,14 @@ body {
 }
 
 
-@font-face {
-  font-family: 'lain';
+/* @font-face {
+  font-family: 'lain'; 
   src: url('./fonts/nrdyyh.woff') format('woff'),
-       url('./fonts/tojcxo.TTF') format('truetype');
-}
+       url('./fonts/tojcxo.TTF') format('truetype'); 
+} */
 h1 
 {
-	font-family: 'lain', tahoma;
+	font-family: tahoma;
 	letter-spacing: -2px;
 	font-size: 20pt;
 	text-align: center;
