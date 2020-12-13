@@ -1,3 +1,5 @@
+# add boards here
+
 # static html and json
 /*/*.html
 /*/*.json
@@ -39,6 +41,7 @@ Thumbs.db
 *.orig
 *~
 ~*/
+index.php
 
 # tmp filesystem
 /tmp/cache/*
@@ -46,7 +49,7 @@ Thumbs.db
 !/tmp/cache/.gitkeep
 !/tmp/locks/.gitkeep
 
-#vichan custom
+# vichan custom
 favicon.ico
 /static/spoiler.png
 
@@ -63,12 +66,14 @@ all/
 mod/
 random/
 
-# Banners
+# banners
 banners/*
-!banners/lain-bottom.png
+!banners/.gitkeep
 
-#Fonts
+# fonts
 stylesheets/fonts
 
-#Images from twemoji
+# images from twemoji
 js/twemoji/16x16/
+
+# wiki
