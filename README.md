@@ -1,4 +1,4 @@
-# gershwin
+ gershwin
 ==========
 ### Hello this is the gershwin readme
 
@@ -23,7 +23,7 @@ Gershwin is a fork of lainchan, itself a fork of vichan which is based on tinybo
 ## Recommended
 1. PHP 7.0+
 2. MySQL/MariaDB server >= 5.5.3
-3. ImageMagick (command-line ImageMagick or GraphicsMagick preferred).
+3. php-imagick
 4. [Memcached](http://www.php.net/manual/en/intro.memcached.php)
 
 ## Upgrade

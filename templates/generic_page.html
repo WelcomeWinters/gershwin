@@ -38,7 +38,8 @@
 		 [<a {% if page.selected %}class="selected"{% endif %}{% if not page.selected %}href="{{ page.link }}"{% endif %}>{{ page.num }}</a>]{% if loop.last %} {% endif %}
 	{% endfor %} {{ btn.next }}</div>
 	{{ boardlist.bottom }}
-<!--	<footer>
+        <!--
+        <footer>
 		<p class="unimportant" style="margin-top:20px;text-align:center;">- <a href="http://tinyboard.org/">Tinyboard</a> + 
 			<a href='https://int.vichan.net/devel/'>vichan</a> + 
 			<a href='https://github.com/lainchan/lainchan'>lainchan</a> {{ config.version }} -
@@ -47,7 +48,7 @@
 		<br><a href="https://github.com/lainchan/lainchan">lainchan</a> Copyright &copy; 2014-2017 lainchan Administration</p>
 
 		{% for footer in config.footer %}<p class="unimportant" style="text-align:center;">{{ footer }}</p>{% endfor %}
-	</footer>-->
+	</footer> -->
 	{% include 'footer.html' %}
 	</div>
 	<script type="text/javascript">{% raw %}

@@ -9,7 +9,6 @@ require_once 'inc/functions.php';
 if ($config['debug'])
 	$parse_start_time = microtime(true);
 
-require_once 'inc/bans.php';
 require_once 'inc/mod/pages.php';
 
 check_login(true);
@@ -73,8 +72,8 @@ $pages = array(
 	'/ban-appeals'				=> 'secure_POST ban_appeals',	// view ban appeals
 	
 	'/recent/(\d+)'				=> 'recent_posts',		// view recent posts
-	'/recent/(\d+)/([\w,]+?)'				=> 'recent_posts',		// view recent posts
-	'/recent/(\d+)/([\w,]+?)/(json)?'			=> 'recent_posts',		// view recent posts JSON
+	'/recent/(\d+)/([\w,]+?)'		=> 'recent_posts',		// view recent posts
+	'/recent/(\d+)/([\w,]+?)/(json)?'	=> 'recent_posts',		// view recent posts JSON
 
 	'/search'				=> 'search_redirect',		// search
 	'/search/(posts|IP_notes|bans|log)/(.+)/(\d+)'	=> 'search',		// search
@@ -83,26 +82,26 @@ $pages = array(
 	'/(\%b)/warning/(\d+)'		        => 'secure_POST warning_post', 	// warn poster
 	'/(\%b)/ban(&delete)?/(\d+)'		=> 'secure_POST ban_post', 	// ban poster
 	'/(\%b)/move/(\d+)'			=> 'secure_POST move',		// move thread
-	'/(\%b)/move_reply/(\d+)'			=> 'secure_POST move_reply',		// move reply
+	'/(\%b)/move_reply/(\d+)'		=> 'secure_POST move_reply',	// move reply
 	'/(\%b)/merge/(\d+)'			=> 'secure_POST merge',		// merge thread
 	'/(\%b)/edit(_raw)?/(\d+)'		=> 'secure_POST edit_post',	// edit post
 	'/(\%b)/delete/(\d+)'			=> 'secure delete',		// delete post
 	'/(\%b)/deletefile/(\d+)/(\d+)'		=> 'secure deletefile',		// delete file from post
-	'/(\%b+)/spoiler/(\d+)/(\d+)'			=> 'secure spoiler_image',	// spoiler file
+	'/(\%b+)/spoiler/(\d+)/(\d+)'		=> 'secure spoiler_image',	// spoiler file
 	'/(\%b)/deletebyip/(\d+)(/global)?'	=> 'secure deletebyip',		// delete all posts by IP address
 	'/(\%b)/(un)?lock/(\d+)'		=> 'secure lock',		// lock thread
 	'/(\%b)/(un)?sticky/(\d+)'		=> 'secure sticky',		// sticky thread
-	'/(\%b)/(un)?cycle/(\d+)'                         => 'secure cycle',          // cycle thread
+	'/(\%b)/(un)?cycle/(\d+)'               => 'secure cycle',              // cycle thread
 	'/(\%b)/bump(un)?lock/(\d+)'		=> 'secure bumplock',		// "bumplock" thread
 	
 	'/themes'				=> 'themes_list',		// manage themes
-	'/themes/(\w+)'				=> 'secure_POST theme_configure',		// configure/reconfigure theme
-	'/themes/(\w+)/rebuild'			=> 'secure theme_rebuild',		// rebuild theme
-	'/themes/(\w+)/uninstall'		=> 'secure theme_uninstall',		// uninstall theme
+	'/themes/(\w+)'				=> 'secure_POST theme_configure',	// configure/reconfigure theme
+	'/themes/(\w+)/rebuild'			=> 'secure theme_rebuild',	// rebuild theme
+	'/themes/(\w+)/uninstall'		=> 'secure theme_uninstall',	// uninstall theme
 	
 	'/config'				=> 'secure_POST config',	// config editor
 	'/config/(\%b)'				=> 'secure_POST config',	// config editor
-	
+
 	// these pages aren't listed in the dashboard without $config['debug']
 	'/debug/antispam'			=> 'debug_antispam',
 	'/debug/recent'				=> 'debug_recent_posts',
