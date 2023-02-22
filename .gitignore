@@ -1,4 +1,7 @@
 # add boards here
+b/
+mu/
+dev/
 
 # static html and json
 /*/*.html
@@ -77,3 +80,4 @@ stylesheets/fonts
 js/twemoji/16x16/
 
 # wiki
+wiki/
