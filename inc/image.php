@@ -499,4 +499,3 @@ class ImageBMP extends ImageBase {
 
 
 
-

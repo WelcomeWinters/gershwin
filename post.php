@@ -415,6 +415,14 @@ function handle_post(){
 	    error("Board is locked");
 	}
 
+	// Check if new threads aee blocked
+	$threads_locked_check = (!isset($_POST['mod']) || !$_POST['mod'])
+		&& $config['threads_locked']===true;
+
+	if ($threads_locked_check && !isset($_POST['thread'])){
+		error("Posting threads is locked on this board. Please post a reply");
+	}
+
 	if (!isset($_POST['name']))
 		$_POST['name'] = $config['anonymous'];
 	
